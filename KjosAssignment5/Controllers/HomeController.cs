@@ -18,7 +18,12 @@ namespace KjosAssignment5.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult BrowseMusic()
+        {
+            return View();
+        }
+
+        public IActionResult Admin()
         {
             return View();
         }

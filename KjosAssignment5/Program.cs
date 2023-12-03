@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using KjosAssignment5.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<KjosAssignment5Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("KjosAssignment5Context") ?? throw new InvalidOperationException("Connection string 'KjosAssignment5Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
