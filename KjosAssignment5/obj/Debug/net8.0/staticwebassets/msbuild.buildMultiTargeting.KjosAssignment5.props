@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KjosAssignment5.props" />
+</Project>
