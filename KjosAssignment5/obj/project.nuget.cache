@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gi61g4Wr+wGLMhtRAMSppv2W1MkH4vKEorpR90HPBQwqdAFPLVUsz42bV9YjYueVey60ckjub/sIrRdn0Mt5eA==",
+  "dgSpecHash": "5wF6dGRP5MbvIpLYXiQcqU4fhvxfTOCAr72+4tYlQmxVUh+iZ83OPWUNePRtjP5BZG6RXIg1QOXpHEDoN7hWUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
+  "projectFilePath": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Logan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Logan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

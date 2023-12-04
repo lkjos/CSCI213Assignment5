@@ -133,7 +133,7 @@ namespace KjosAssignment5.Controllers
             {
                 _context.Add(song);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Admin));
             }
             return View(song);
         }
@@ -184,7 +184,7 @@ namespace KjosAssignment5.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Admin));
             }
             return View(song);
         }
@@ -219,7 +219,7 @@ namespace KjosAssignment5.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Admin));
         }
 
         private bool SongExists(int id)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj": {}
+    "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj": {
+    "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
+        "projectUniqueName": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
         "projectName": "KjosAssignment5",
-        "projectPath": "C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
+        "projectPath": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
         "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Logan\\source\\repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\obj\\",
+        "outputPath": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
