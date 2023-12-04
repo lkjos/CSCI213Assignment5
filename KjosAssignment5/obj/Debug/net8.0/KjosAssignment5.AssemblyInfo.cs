@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KjosAssignment5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02c8fb99dab8f4350b494e5a3570daf256166114")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("KjosAssignment5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KjosAssignment5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

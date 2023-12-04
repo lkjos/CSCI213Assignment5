@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using KjosAssignment5.Data;
+using KjosAssignment5.Models;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<KjosAssignment5Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("KjosAssignment5Context") ?? throw new InvalidOperationException("Connection string 'KjosAssignment5Context' not found.")));
@@ -9,6 +10,13 @@ builder.Services.AddDbContext<KjosAssignment5Context>(options =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

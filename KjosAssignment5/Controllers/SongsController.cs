@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using KjosAssignment5.Data;
 using KjosAssignment5.Models;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.View;
 
 namespace KjosAssignment5.Controllers
 {
@@ -20,9 +21,42 @@ namespace KjosAssignment5.Controllers
         }
 
         // GET: Songs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string songGenre, string songArtist)
         {
-            return View(await _context.Song.ToListAsync());
+            if (_context.Song == null)
+            {
+                return Problem("erm...");
+            }
+
+            IQueryable<string> genreQuery = from m in _context.Song
+                                            orderby m.Genre
+                                            select m.Genre;
+            IQueryable<string> artistQuery = from m in _context.Song
+                                             orderby m.Artist
+                                             select m.Artist;
+            var songs = from m in _context.Song
+                           select m;
+
+            if (!string.IsNullOrEmpty(songGenre))
+            {
+                songs = songs.Where(s => s.Genre == songGenre);
+                artistQuery = from m in _context.Song
+                              where m.Genre == songGenre
+                              orderby m.Artist
+                              select m.Artist;
+            }
+            if (!string.IsNullOrEmpty(songArtist))
+            {
+                songs = songs.Where(s => s.Artist == songArtist);
+            }
+
+            var songGenreVM = new SongGenreViewModel
+            {
+                Artists = new SelectList(await artistQuery.ToListAsync()),
+                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Songs = await songs.ToListAsync()
+            };
+            return View(songGenreVM);
         }
 
         // GET: Songs/Details/5
