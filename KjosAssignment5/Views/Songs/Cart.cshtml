@@ -4,19 +4,6 @@
 }
 
 <h1 class="display-4">Shopping Cart</h1>
-<form asp-controller="Songs" asp-action="Cart" method="get">
-    <p>
-        Genre:
-        <select asp-for="SongGenre" asp-items="Model.Genres">
-            <option value="">All</option>
-        </select>
-        Artist:
-        <select asp-for="SongArtist" asp-items="Model.Artists">
-            <option value="">All</option>
-        </select>
-        <input type="submit" value="Filter" />
-    </p>
-</form>
 <table class="table">
     <thead>
         <tr>
@@ -57,10 +44,20 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                <td>
-                    <a asp-action="Remove" asp-route-id="@item.Id">Remove</a>
-                </td>
             </tr>
         }
     </tbody>
 </table>
+<p>
+    @{
+        decimal counter = 0;
+        foreach (var item in Model.Songs!)
+        {
+            counter += item.Price;
+        }
+    }
+    Total Price: @counter
+</p>
+<p>
+    <button>Complete Payment!</button>
+</p>
