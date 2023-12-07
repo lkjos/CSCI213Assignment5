@@ -133,6 +133,24 @@ namespace KjosAssignment5.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // POST: Remove
+        [HttpPost]
+        public IActionResult Remove(string[] CartRemoveList)
+        {
+            List<Song> CartList = cart.ToList();
+            List<Song> temp = new List<Song>();
+            foreach (var s in CartList)
+            {
+                if (!(CartRemoveList.Contains(s.Id.ToString())))
+                {
+                    temp.Add((Song)s);
+                }
+            }
+            cart = temp;
+
+            return RedirectToAction(nameof(Cart));
+        }
+
         // GET: Songs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
