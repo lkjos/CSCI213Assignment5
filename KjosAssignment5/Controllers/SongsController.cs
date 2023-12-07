@@ -8,12 +8,15 @@ using Microsoft.EntityFrameworkCore;
 using KjosAssignment5.Data;
 using KjosAssignment5.Models;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.View;
+using System.CodeDom;
+using Microsoft.IdentityModel.Tokens;
 
 namespace KjosAssignment5.Controllers
 {
     public class SongsController : Controller
     {
         private readonly KjosAssignment5Context _context;
+        private static IEnumerable<Song> cart = new List<Song>();
 
         public SongsController(KjosAssignment5Context context)
         {
@@ -96,6 +99,44 @@ namespace KjosAssignment5.Controllers
                 Songs = await songs.ToListAsync()
             };
             return View(songGenreVM);
+        }
+
+        // GET: Cart
+        public async Task<IActionResult> Cart()
+        {
+            var SongGenreVM = new SongGenreViewModel
+            {
+                Songs = cart.ToList()
+            };
+            return View(SongGenreVM);
+        }
+
+        // POST: AddCart
+        [HttpPost]
+        public IActionResult AddCart(string[] CartList)
+        {
+            IEnumerable<Song> songs = new List<Song>();
+            foreach (string i in CartList)
+            {
+                songs = songs.Union(from m in _context.Song where m.Id == Convert.ToInt32(i) select m);
+            }
+            if (!songs.IsNullOrEmpty())
+            {
+                IEnumerable<Song> SongList = songs.ToList();
+                if (!cart.IsNullOrEmpty())
+                {
+                    IEnumerable<Song> temp = cart;
+                    SongList = SongList.Union(temp).DistinctBy(s => s.Id);
+                }
+                cart = SongList;
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: Remove
+        public async Task<IActionResult> Remove()
+        {
+            return View();
         }
 
         // GET: Songs/Details/5
