@@ -23,34 +23,66 @@ namespace KjosAssignment5.Models
                 context.Song.AddRange(
                     new Song
                     {
-                        Title = "test1",
-                        ReleaseDate = DateTime.Parse("2000-1-1"),
-                        Genre = "Pop",
-                        Artist = "test1",
-                        Price = 20.00M
-                    },
-                    new Song
-                    {
-                        Title = "test2",
-                        ReleaseDate = DateTime.Parse("2000-1-1"),
+                        Title = "Radioactive",
+                        ReleaseDate = DateTime.Parse("2012-10-29"),
                         Genre = "Rock",
-                        Artist = "test2",
-                        Price = 30.00M
-                    },
-                    new Song
-                    {
-                        Title = "test3",
-                        ReleaseDate = DateTime.Parse("2000-1-1"),
-                        Genre = "Country",
-                        Artist = "test3",
+                        Artist = "Imagine Dragons",
                         Price = 15.00M
                     },
                     new Song
                     {
-                        Title = "test4",
-                        ReleaseDate = DateTime.Parse("2000-1-1"),
+                        Title = "Locked out of Heaven",
+                        ReleaseDate = DateTime.Parse("2012-10-01"),
+                        Genre = "Pop",
+                        Artist = "Bruno Mars",
+                        Price = 20.00M
+                    },
+                    new Song
+                    {
+                        Title = "Little Talks",
+                        ReleaseDate = DateTime.Parse("2011-12-20"),
+                        Genre = "Alternative",
+                        Artist = "Of Monsters and Men",
+                        Price = 12.50M
+                    },
+                    new Song
+                    {
+                        Title = "Stars",
+                        ReleaseDate = DateTime.Parse("2022-8-26"),
                         Genre = "Hip-hop",
-                        Artist = "test4",
+                        Artist = "JID",
+                        Price = 15.00M
+                    },
+                    new Song
+                    {
+                        Title = "What You Know",
+                        ReleaseDate = DateTime.Parse("2011-2-7"),
+                        Genre = "Alternative",
+                        Artist = "Two Door Cinema Club",
+                        Price = 10.00M
+                    },
+                    new Song
+                    {
+                        Title = "Black Hole Sun",
+                        ReleaseDate = DateTime.Parse("1994-3-8"),
+                        Genre = "Rock",
+                        Artist = "Soundgarden",
+                        Price = 17.50M
+                    },
+                    new Song
+                    {
+                        Title = "Chandelier",
+                        ReleaseDate = DateTime.Parse("2014-3-17"),
+                        Genre = "Pop",
+                        Artist = "Sia",
+                        Price = 20.00M
+                    },
+                    new Song
+                    {
+                        Title = "LOYALTY",
+                        ReleaseDate = DateTime.Parse("2017-7-28"),
+                        Genre = "Hip-hop",
+                        Artist = "Kendrick Lamar",
                         Price = 20.00M
                     }
                 );

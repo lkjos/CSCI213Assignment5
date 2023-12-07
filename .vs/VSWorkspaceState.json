@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\KjosAssignment5",
+    "\\KjosAssignment5\\Views",
+    "\\KjosAssignment5\\Views\\Songs"
   ],
-  "SelectedNode": "\\KjosAssignment5.sln",
+  "SelectedNode": "\\KjosAssignment5\\Views\\Songs\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

@@ -7993,23 +7993,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nickj\\.nuget\\packages\\": {},
+    "C:\\Users\\Logan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nickj\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
+      "projectUniqueName": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
       "projectName": "KjosAssignment5",
-      "projectPath": "C:\\Users\\nickj\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
-      "packagesPath": "C:\\Users\\nickj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nickj\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\obj\\",
+      "projectPath": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\KjosAssignment5.csproj",
+      "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Logan\\Source\\Repos\\lkjos\\CSCI213Assignment5\\KjosAssignment5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nickj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
